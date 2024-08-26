@@ -1,0 +1,155 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #cfcbcb;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: #333;
+    border-radius: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    flex-direction: row;
+    border: 4px solid #890c0c;
+}
+
+.input-section, .output-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.input-section {
+    border-right: 2px solid #890c0c;
+    position: relative;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 0px #000;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #111;
+    color: #ff0000;
+    border: 2px solid #890c0c;
+    border-radius: 0;
+    text-shadow: 1px 1px 0px #000;
+}
+
+#validation-message {
+    font-size: 12px;
+    color: #ff6666;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid #890c0c;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #111; /* Fondo casi negro */
+    text-shadow: 1px 1px 0px #000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.encrypt {
+    background-color: #890c0c; /* Botón de encriptar en rojo */
+    color: #fff;
+    border-radius: 10px;
+}
+
+.decrypt {
+    background-color: #890c0c; /* Botón de desencriptar en negro */
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.button:hover {
+    opacity: 0.9;
+    border-color: #890c0c;
+}
+
+.output-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#output-placeholder {
+    font-size: 18px;
+    color: #ff6666;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px #000;
+}
+
+#output-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 0;
+    border: 2px solid #ff000067;
+    background-color: #111;
+    color: #ff1414;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 1px 1px 0px #000;
+    margin-bottom: 20px;
+}
+
+.copy {
+    background-color: #7f1515;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .input-section {
+        border-right: none; 
+        border-bottom: 2px solid #ff0000; 
+    }
+}
