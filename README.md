@@ -29,4 +29,4 @@ El proyecto sigue el patrón de diseño MVC para separar las responsabilidades d
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/JosephAntony37900/Challenge_oracle_grupo7.git
+   git clone git@github.com:RichieCast07/OneChanllenge_Sploit.git
