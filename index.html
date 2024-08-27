@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/Profile.png" type="image/sploit">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="title-container">
+        <h1 id="typewriter-title">Alura Team</h1>
+    </div>
+    <a href="https://github.com/RichieCast07">
+        <div class="icon-profile">
+            <img id="profile" src="src/assets/Profile.png">
+        </div>
+    </a>
+
     <div class="container">
         <div class="input-section">
-            <div class="logo">S</div>
-            <h2>Ingrese el texto aqui</h2>
-            <textarea id="input-text" placeholder="Ingrese el texto aquí..."></textarea>
-            <div id="validation-message">⚠️ Solo letras minúsculas y sin acentos</div>
+            <textarea id="input-text" placeholder="Ingrese el texto..."></textarea>
+            <div id="validation-message">⚠️ Solo letras minúsculas y sin acentos⚠️</div>
             <div class="button-group">
                 <button id="encrypt-button" class="button encrypt">Encriptar</button>
                 <button id="decrypt-button" class="button decrypt">Desencriptar</button>
@@ -20,11 +29,18 @@
         </div>
         
         <div class="output-section">
-            <p id="output-placeholder">Ningún mensaje fue encontrado</p>
-            <textarea id="output-text" readonly></textarea>
-            <button id="copy-button" class="button copy">Copiar</button>
+            <p id="output-placeholder">⚠️Ningún mensaje fue encontrado⚠️</p>
+            <textarea id="output-text" placeholder="Texto encriptado..." readonly></textarea>
+            <div class="button-container">
+                <button id="copy-button" class="button copy">Copiar</button>
+                <button id="clear-button" class="button clear">Limpiar</button>
+            </div>
         </div>
     </div>
+
+    <footer id="footer">
+        <p>Desarrollado por Sploit07</p>
+    </footer>
 
     <script src="src/controllers/Script.js"></script>
     <script src="src/models/Encriptador.js"></script>
